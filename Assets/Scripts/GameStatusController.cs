@@ -2,34 +2,29 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameStatusController : MonoBehaviour
-{
+public class GameStatusController : MonoBehaviour {
 
 	private bool hasGameStarted = false;
-
+	public GameObject healthBar;
 	// Use this for initialization
-	void Start ()
-	{
+	void Start() {
 		
 	}
 	
 	// Update is called once per frame
-	void Update ()
-	{
+	void Update() {
 		
 	}
 
-	public void SetGameStarted ()
-	{
-		if (this.hasGameStarted) {
+	public void SetGameStarted() {
+		if(this.hasGameStarted) {
 			this.hasGameStarted = false;
 		} else {
 			this.hasGameStarted = true;
 		}
 	}
 
-	public bool GetGameStarted ()
-	{
+	public bool GetGameStarted() {
 		return this.hasGameStarted;
 	}
 }
