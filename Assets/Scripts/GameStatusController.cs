@@ -5,7 +5,6 @@ using UnityEngine;
 public class GameStatusController : MonoBehaviour {
 
 	private bool hasGameStarted = false;
-	public GameObject healthBar;
 	// Use this for initialization
 	void Start() {
 		
