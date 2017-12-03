@@ -87,7 +87,9 @@ public class Tower : MonoBehaviour
 				QuarkController enemy = objectsInRange [i].GetComponent<QuarkController> ();
 				if (enemy != null) {
 					//Debug.Log ("Enemies inside the area: " + objectsInRange.Length); // Shows on console how many enemies are inside the range.
-					Instantiate (bulletPrefab, firepoint.position, firepoint.rotation);
+					Debug.Log ("Impact!");
+					GameObject impact = Instantiate (bulletPrefab, firepoint.position, firepoint.rotation);
+					Destroy (impact, 1.1f);
 					enemy.Hit (damage);
 					if (objectsInRange [i].CompareTag ("Quark_Top") && i != objectsInRange.Length - 1) {//If is the Quark Top and it is NOT the last one on the array
 						i++;																			//jump the next quak in array. (This will prevent from hit the next quak imediatly after the Top stops protecting);

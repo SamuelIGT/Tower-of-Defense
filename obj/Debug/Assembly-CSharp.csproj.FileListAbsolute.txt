@@ -5,7 +5,6 @@ C:\Users\samue\OneDrive\Documentos\Unity\Tower of Defense\Temp\bin\Debug\UnityEn
 C:\Users\samue\OneDrive\Documentos\Unity\Tower of Defense\Temp\bin\Debug\UnityEngine.dll
 C:\Users\samue\OneDrive\Documentos\Unity\Tower of Defense\Temp\bin\Debug\UnityEngine.HoloLens.dll
 C:\Users\samue\OneDrive\Documentos\Unity\Tower of Defense\Temp\bin\Debug\UnityEngine.Networking.dll
-C:\Users\samue\OneDrive\Documentos\Unity\Tower of Defense\Temp\bin\Debug\UnityEngine.PlaymodeTestsRunner.dll
 C:\Users\samue\OneDrive\Documentos\Unity\Tower of Defense\Temp\bin\Debug\UnityEngine.UI.dll
 C:\Users\samue\OneDrive\Documentos\Unity\Tower of Defense\Temp\bin\Debug\UnityEngine.VR.dll
 C:\Users\samue\OneDrive\Documentos\Unity\Tower of Defense\Temp\bin\Debug\Mono.Cecil.dll
@@ -20,7 +19,6 @@ C:\Users\samue\OneDrive\Documentos\Unity\Tower of Defense\Temp\bin\Debug\UnityEn
 C:\Users\samue\OneDrive\Documentos\Unity\Tower of Defense\Temp\bin\Debug\UnityEditor.xml
 C:\Users\samue\OneDrive\Documentos\Unity\Tower of Defense\Temp\bin\Debug\UnityEngine.UI.xml
 C:\Users\samue\OneDrive\Documentos\Unity\Tower of Defense\Temp\bin\Debug\UnityEngine.Networking.xml
-C:\Users\samue\OneDrive\Documentos\Unity\Tower of Defense\Temp\bin\Debug\UnityEngine.PlaymodeTestsRunner.xml
 C:\Users\samue\OneDrive\Documentos\Unity\Tower of Defense\Temp\bin\Debug\UnityEngine.Analytics.xml
 C:\Users\samue\OneDrive\Documentos\Unity\Tower of Defense\Temp\bin\Debug\UnityEngine.HoloLens.xml
 C:\Users\samue\OneDrive\Documentos\Unity\Tower of Defense\Temp\bin\Debug\UnityEngine.VR.xml
@@ -58,3 +56,7 @@ C:\Users\samue\Documents\Unity\Tower-of-Defense\Temp\bin\Debug\UnityEngine.VR.xm
 C:\Users\samue\Documents\Unity\Tower-of-Defense\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
 C:\Users\samue\Documents\Unity\Tower-of-Defense\obj\Debug\Assembly-CSharp.dll
 C:\Users\samue\Documents\Unity\Tower-of-Defense\obj\Debug\Assembly-CSharp.pdb
+C:\Users\samue\OneDrive\Documentos\Unity\Tower of Defense\Temp\bin\Debug\nunit.framework.dll
+C:\Users\samue\OneDrive\Documentos\Unity\Tower of Defense\Temp\bin\Debug\UnityEngine.TestRunner.dll
+C:\Users\samue\OneDrive\Documentos\Unity\Tower of Defense\Temp\bin\Debug\UnityEngine.TestRunner.xml
+C:\Users\samue\OneDrive\Documentos\Unity\Tower of Defense\Temp\bin\Debug\nunit.framework.xml

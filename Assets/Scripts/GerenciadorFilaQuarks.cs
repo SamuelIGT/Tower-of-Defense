@@ -11,7 +11,7 @@ public class GerenciadorFilaQuarks : MonoBehaviour
 	public GameObject prefabBottom;
 	public GameObject prefabTop;
 	public GameObject healthBar;
-	public QuarksListController qlc;
+	public QuarksListController quarksListController;
 
 	enum Quarks
 	{
@@ -46,8 +46,9 @@ public class GerenciadorFilaQuarks : MonoBehaviour
 
 	public void GerarFila ()
 	{
-		List <int> lista = qlc.GetQuarksList ();
-		int listSize = qlc.ListSize ();
+		List <int> lista = quarksListController.GetQuarksList ();
+		int listSize = quarksListController.ListSize ();
+		Debug.Log ("Tamanho da Lista:" + listSize);
 
 		for (int i = 0; i <= listSize; i++) {
 			AddQuark (lista [i]);
