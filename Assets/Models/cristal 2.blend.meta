@@ -4,7 +4,31 @@ timeCreated: 1511487135
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    100000: cristal
+    100002: //RootNode
+    100004: Sombra_cristal
+    100006: Sombra_twins
+    100008: twins
+    400000: cristal
+    400002: //RootNode
+    400004: Sombra_cristal
+    400006: Sombra_twins
+    400008: twins
+    2300000: cristal
+    2300002: Sombra_cristal
+    2300004: Sombra_twins
+    2300006: twins
+    3300000: cristal
+    3300002: Sombra_cristal
+    3300004: Sombra_twins
+    3300006: twins
+    4300000: Sombra_twins
+    4300002: twins
+    4300004: Sombra_cristal
+    4300006: cristal
+    7400000: Default Take
+    9500000: //RootNode
   materials:
     importMaterials: 1
     materialName: 0

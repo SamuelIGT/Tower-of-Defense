@@ -3,18 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class QuarksListController : MonoBehaviour
-{
-	public GameObject quarkIconShape;
+public class QuarksListController : MonoBehaviour {
+	public GameObject quarkButtonObject;
 
 	private List<GameObject> quarksIcon;
 	private List<int> quarksList;
 	private int lastIndex;
-	public Color[] quarkColors;
+	public Sprite[] quarksIcons;
 	//	public float uiIconPadding = 10f;
 
-	private enum Quarks
-	{
+	private enum Quarks {
 		UP = 0,
 		DOWN = 1,
 		STRANGE = 2,
@@ -24,48 +22,23 @@ public class QuarksListController : MonoBehaviour
 	;
 
 	// Use this for initialization
-	void Start ()
-	{
-		quarksIcon = new List<GameObject> ();
-		quarksList = new List<int> ();
+	void Start() {
+		quarksIcon = new List<GameObject>();
+		quarksList = new List<int>();
 		lastIndex = -1;
 	}
 	
 	// Update is called once per frame
-	void Update ()
-	{
+	void Update() {
 		
 	}
 
-	public void AddQuark (int quarkType)
-	{
+	public void AddQuark(int quarkType) {
 		GameObject go;
-		switch (quarkType) {
-		case (int)Quarks.UP: 
-			go = Instantiate (quarkIconShape) as GameObject;
-			break;
-		case (int)Quarks.DOWN: 
-			go = Instantiate (quarkIconShape) as GameObject;
-			break;
-		case (int)Quarks.STRANGE: 
-			go = Instantiate (quarkIconShape) as GameObject;
-			break;
-		case (int)Quarks.CHARM: 
-			go = Instantiate (quarkIconShape) as GameObject;
-			break;
-		case (int)Quarks.BOTTOM: 
-			go = Instantiate (quarkIconShape) as GameObject;
-			break;
-		case (int)Quarks.TOP: 
-			go = Instantiate (quarkIconShape) as GameObject;
-			break;
-		default: 
-			go = Instantiate (quarkIconShape) as GameObject;
-			break;
-		}
 
-		go.transform.SetParent (transform, false);
-		go.GetComponent<Image> ().color = quarkColors [quarkType];
+		go = Instantiate(quarkButtonObject) as GameObject;
+		go.transform.SetParent(transform, false);
+		go.GetComponent<Image>().sprite = quarksIcons[quarkType];
 
 		/*if (lastIndex >= 0) {
 			//localizar o ultimo
@@ -77,32 +50,29 @@ public class QuarksListController : MonoBehaviour
 		}*/
 
 		//adicionar na lista
-		quarksIcon.Add (go);
-		quarksList.Add (quarkType);
+		quarksIcon.Add(go);
+		quarksList.Add(quarkType);
 		lastIndex++;
 	
 	}
 
-	public List<int> GetQuarksList ()
-	{
+	public List<int> GetQuarksList() {
 		return quarksList;
 	}
 
-	public int ListSize ()
-	{
+	public int ListSize() {
 		return quarksList.Count - 1;
 	}
 
-	public void removeQuark (int instanceID)
-	{
-		for (int i = 0; i <= quarksIcon.Count; i++) {//tranformar em for iterativo
-			Debug.Log (quarksList.Count);
-			Debug.Log (i);
-			if (quarksIcon [i].GetInstanceID () == instanceID) {
-				Destroy (quarksIcon [i]);
-				quarksIcon.Remove (quarksIcon [i]);
-				quarksList.Remove (quarksList [i]);//Terminar
-				Debug.Log ("Final: " + quarksList.Count);
+	public void removeQuark(int instanceID) {
+		for(int i = 0; i <= quarksIcon.Count; i++) {//tranformar em for iterativo
+			Debug.Log(quarksList.Count);
+			Debug.Log(i);
+			if(quarksIcon[i].GetInstanceID() == instanceID) {
+				Destroy(quarksIcon[i]);
+				quarksIcon.Remove(quarksIcon[i]);
+				quarksList.Remove(quarksList[i]);//Terminar
+				Debug.Log("Final: " + quarksList.Count);
 				return;
 			}
 		}
