@@ -46,8 +46,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\EndGameManager.cs" />
      <Compile Include="Assets\Scripts\Bullet.cs" />
+     <Compile Include="Assets\Scripts\EndGameManager.cs" />
      <Compile Include="Assets\Scripts\GameStatusController.cs" />
      <Compile Include="Assets\Scripts\GerenciadorFilaQuarks.cs" />
      <Compile Include="Assets\Scripts\QuarkController.cs" />

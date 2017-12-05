@@ -48,7 +48,6 @@ public class QuarkController : MonoBehaviour {
 
 			if(this.gameObject.CompareTag("Quark_Top") || this.gameObject.CompareTag("Quark_Charm")) {
 				if(quarksAround == null) {
-					Debug.Log("ENTROU!!!!!!!!!!!!!!!!!!!!!!!!!!!");
 					UpdateQuarksAround();
 				}
 			}
@@ -87,6 +86,7 @@ public class QuarkController : MonoBehaviour {
 						}
 					}
 				}
+				GameObject.FindWithTag("GameController").GetComponent<GerenciadorFilaQuarks>().removeQuark(gameObject);
 				Destroy(gameObject);
 				Destroy(healthBarGameObject);
 			}
@@ -124,5 +124,9 @@ public class QuarkController : MonoBehaviour {
 	public void SetHealthBar(GameObject healthBarGameObject) {
 		this.healthBarGameObject = healthBarGameObject;
 		this.healthBar = healthBarGameObject.transform.GetChild(0).GetComponent<Image>();
+	}
+
+	public GameObject getHealthBar() {
+		return healthBarGameObject;
 	}
 }
