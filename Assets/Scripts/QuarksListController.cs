@@ -10,6 +10,9 @@ public class QuarksListController : MonoBehaviour {
 	private List<int> quarksList;
 	private int lastIndex;
 	public Sprite[] quarksIcons;
+	public GameStatusController gameStatusController;
+	public QuarkUIButton[] quarkUIController;
+
 	//	public float uiIconPadding = 10f;
 
 	private enum Quarks {
@@ -23,6 +26,7 @@ public class QuarksListController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start() {
+		
 		quarksIcon = new List<GameObject>();
 		quarksList = new List<int>();
 		lastIndex = -1;
@@ -34,13 +38,15 @@ public class QuarksListController : MonoBehaviour {
 	}
 
 	public void AddQuark(int quarkType) {
-		GameObject go;
+		if(CheckCost(quarkType)) {
+			gameStatusController.decreaseMoney(quarkUIController[quarkType].cost);
 
-		go = Instantiate(quarkButtonObject) as GameObject;
-		go.transform.SetParent(transform, false);
-		go.GetComponent<Image>().sprite = quarksIcons[quarkType];
+			GameObject go;
+			go = Instantiate(quarkButtonObject) as GameObject;
+			go.transform.SetParent(transform, false);
+			go.GetComponent<Image>().sprite = quarksIcons[quarkType];
 
-		/*if (lastIndex >= 0) {
+			/*if (lastIndex >= 0) {
 			//localizar o ultimo
 			Vector3 posicaoUltimo = quarksIcon [lastIndex].transform.position;
 			//setar posição
@@ -49,11 +55,20 @@ public class QuarksListController : MonoBehaviour {
 			go.transform.position = transform.position;
 		}*/
 
-		//adicionar na lista
-		quarksIcon.Add(go);
-		quarksList.Add(quarkType);
-		lastIndex++;
+			//adicionar na lista
+			quarksIcon.Add(go);
+			quarksList.Add(quarkType);
+			lastIndex++;
+		}
 	
+	}
+
+	private bool CheckCost(int quarkType) {
+		if((gameStatusController.GetCurrentMoney() - quarkUIController[quarkType].cost) >= 0) {
+			return true;
+		} else {
+			return false;
+		}
 	}
 
 	public List<int> GetQuarksList() {
@@ -77,4 +92,12 @@ public class QuarksListController : MonoBehaviour {
 			}
 		}
 	}
+
+	public void clearList() {
+		this.quarksList = new List<int>();
+	}
+
+	/*	public void setQuarkUIController(QuarkUIButton quarkUiCtrl) {
+		this.quarkUIController = quarkUiCtrl;
+	}*/
 }

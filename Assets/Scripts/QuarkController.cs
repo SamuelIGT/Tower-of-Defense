@@ -36,9 +36,9 @@ public class QuarkController : MonoBehaviour {
 
 		if(gameStatusController.GetGameStarted()) {
 			Vector3 direction = target.position - transform.position;
-			transform.Translate(direction.normalized * speed * Time.deltaTime);
+			transform.Translate(direction.normalized * (speed * Time.deltaTime));
 
-			if(Vector3.Distance(transform.position, target.position) <= 0.4f) {
+			if(Vector3.Distance(transform.position, target.position) <= 0.2f) {
 				getNextWaypoint();
 			}
 

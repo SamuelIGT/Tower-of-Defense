@@ -10,7 +10,7 @@ public class QuarkUIButton : MonoBehaviour, IPointerEnterHandler {
 	public Text costText;
 	public Text titleText;
 	public string description;
-	public string cost;
+	public float cost;
 	public string title;
 	// Use this for initialization
 	void Start() {
@@ -25,7 +25,7 @@ public class QuarkUIButton : MonoBehaviour, IPointerEnterHandler {
 	public void OnPointerEnter(PointerEventData eventData) {
 		descriptionText.text = description;
 		titleText.text = title;
-		costText.text = cost;
+		costText.text = cost + " $";
 	}
 		
 

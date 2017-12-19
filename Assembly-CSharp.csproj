@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{C80BAC19-919F-F047-F12E-67CCBE94401E}</ProjectGuid>
+    <ProjectGuid>{4008EB7D-049F-E14C-02A2-C94093142647}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -54,6 +54,7 @@
      <Compile Include="Assets\Scripts\QuarkUIButton.cs" />
      <Compile Include="Assets\Scripts\QuarkUIIconController.cs" />
      <Compile Include="Assets\Scripts\QuarksListController.cs" />
+     <Compile Include="Assets\Scripts\ScrollController.cs" />
      <Compile Include="Assets\Scripts\Tower.cs" />
      <Compile Include="Assets\Scripts\Waypoints.cs" />
  <Reference Include="UnityEngine.UI">

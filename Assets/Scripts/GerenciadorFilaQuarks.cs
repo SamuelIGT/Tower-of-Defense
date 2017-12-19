@@ -108,4 +108,9 @@ public class GerenciadorFilaQuarks : MonoBehaviour {
 	public void removeQuark(GameObject quarkGameObject) {
 		listQuarks.Remove(quarkGameObject);
 	}
+
+	public void Clear() {
+		Start();
+	}
+		
 }
