@@ -104,4 +104,9 @@ public class GameStatusController : MonoBehaviour {
 		currentMoney -= value;
 		SetMoneyText();
 	}
+
+	public void increaseMoney(float value) {
+		currentMoney += value;
+		SetMoneyText();
+	}
 }

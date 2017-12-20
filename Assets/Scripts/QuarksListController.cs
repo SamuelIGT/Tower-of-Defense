@@ -45,6 +45,7 @@ public class QuarksListController : MonoBehaviour {
 			go = Instantiate(quarkButtonObject) as GameObject;
 			go.transform.SetParent(transform, false);
 			go.GetComponent<Image>().sprite = quarksIcons[quarkType];
+			go.GetComponent<QuarkUIIconController>().setQuarkType(quarkType);
 
 			/*if (lastIndex >= 0) {
 			//localizar o ultimo
@@ -80,13 +81,16 @@ public class QuarksListController : MonoBehaviour {
 	}
 
 	public void removeQuark(int instanceID) {
-		for(int i = 0; i <= quarksIcon.Count; i++) {//tranformar em for iterativo
+		for(int i = 0; i <= quarksIcon.Count; i++) {
 			Debug.Log(quarksList.Count);
 			Debug.Log(i);
 			if(quarksIcon[i].GetInstanceID() == instanceID) {
+				
+				gameStatusController.increaseMoney(quarkUIController[quarksIcon[i].GetComponent<QuarkUIIconController>().getQuarkType()].cost);
+
 				Destroy(quarksIcon[i]);
 				quarksIcon.Remove(quarksIcon[i]);
-				quarksList.Remove(quarksList[i]);//Terminar
+				quarksList.Remove(quarksList[i]);
 				Debug.Log("Final: " + quarksList.Count);
 				return;
 			}

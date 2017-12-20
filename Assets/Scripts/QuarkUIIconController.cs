@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class QuarkUIIconController : MonoBehaviour {
+	private int quarkType = 0;
 	private string scrollViewContentTag = "SCROLL_VIEW_CONTENT";
 	// Use this for initialization
 	void Start() {
@@ -18,4 +19,13 @@ public class QuarkUIIconController : MonoBehaviour {
 		Debug.Log("List item clicked!");
 		GameObject.FindGameObjectWithTag(scrollViewContentTag).GetComponent<QuarksListController>().removeQuark(this.gameObject.GetInstanceID());
 	}
+
+	public void setQuarkType(int quarkType) {
+		this.quarkType = quarkType;
+	}
+
+	public int getQuarkType() {
+		return quarkType;
+	}
+
 }
