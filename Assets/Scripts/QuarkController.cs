@@ -13,7 +13,7 @@ public class QuarkController : MonoBehaviour {
 	private Image healthBar;
 	private GameObject healthBarGameObject;
 
-	private bool isProtected = false;
+	public bool isProtected = false;
 	private Transform target;
 	private int waypointIndex = 0;
 	private GameStatusController gameStatusController;
@@ -55,7 +55,8 @@ public class QuarkController : MonoBehaviour {
 	}
 
 	private void UpdateQuarksAround() {
-		quarksAround = Physics.OverlapSphere(transform.position, quarksOffset, quarkMask);
+		quarksAround = Physics.OverlapSphere(transform.position, (Mathf.Abs(quarksOffset) + 0.2f), quarkMask);
+		Debug.Log("Quarks Around: " + quarksAround.Length);
 		if(this.gameObject.CompareTag("Quark_Charm")) {
 			InvokeRepeating("Heal", 0f, healingRate);
 		} else {

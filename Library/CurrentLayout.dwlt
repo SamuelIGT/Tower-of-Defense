@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 950, y: 300}
+  m_MinSize: {x: 950, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -110,7 +110,7 @@ MonoBehaviour:
   m_MinSize: {x: 713, y: 492}
   m_MaxSize: {x: 18008, y: 14042}
   vertical: 0
-  controlID: 11
+  controlID: 5228
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -134,7 +134,7 @@ MonoBehaviour:
   m_MinSize: {x: 232, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 81
+  controlID: 5189
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -345,9 +345,9 @@ MonoBehaviour:
     height: 411
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 462a0000
-    m_LastClickedID: 10822
-    m_ExpandedIDs: e0fbffff00000000022700002e2700009e2700001c290000f4290000
+    m_SelectedIDs: 
+    m_LastClickedID: 0
+    m_ExpandedIDs: 38e2ffffe0fbffff00000000de260000022700002e270000842700009e27000000280000bc280000f4290000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -407,7 +407,7 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Prefab
+    - Assets/Prefab/Quarks
   m_ViewMode: 0
   m_StartGridSize: 68
   m_LastFolders: []
@@ -418,7 +418,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 84260000
     m_LastClickedID: 9860
-    m_ExpandedIDs: 00000000c6240000ca240000022500005a250000ba250000962600009c2600000e2d0000102d0000
+    m_ExpandedIDs: 00000000c6240000ca2400005a250000662500006e250000ba250000d0250000962600000e2d0000102d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -443,24 +443,24 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_AssetTreeState:
-    scrollPos: {x: 0, y: 172}
+    scrollPos: {x: 0, y: 52}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000c6240000ca2400005a2500006e250000ba250000d0250000962600009c2600000e2d0000102d0000
+    m_ExpandedIDs: 00000000c6240000ca2400005a250000662500006e250000ba250000d0250000962600000e2d0000102d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Bullet
-      m_OriginalName: Bullet
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 1360
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 8}
     m_SearchString: 
@@ -561,10 +561,10 @@ MonoBehaviour:
     m_ValueSerializationHelper:
     - {x: 395.2, y: 333.19995}
   m_PreviewAnimator: {fileID: 0}
-  m_AnimatorController: {fileID: 9100000, guid: 7fd46baa2fc0d4c4bb6513abbf819410,
+  m_AnimatorController: {fileID: 9100000, guid: 9e5253765d143774ebd150affa4918f3,
     type: 2}
   m_BreadCrumbs:
-  - m_Target: {fileID: 1107936525895322700, guid: 7fd46baa2fc0d4c4bb6513abbf819410,
+  - m_Target: {fileID: 1107928716089393402, guid: 9e5253765d143774ebd150affa4918f3,
       type: 2}
     m_ScrollPosition: {x: 0, y: 0}
   stateMachineGraph: {fileID: 0}
@@ -636,9 +636,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -14.959961, y: -6.074707, z: 27}
+    m_Target: {x: -0.5096971, y: -8.790032, z: 28.28125}
     speed: 2
-    m_Value: {x: -14.959961, y: -6.074707, z: 27}
+    m_Value: {x: -0.5096971, y: -8.790032, z: 28.28125}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -657,22 +657,22 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
     zGrid:
-      m_Target: 0
+      m_Target: 1
       speed: 2
-      m_Value: 0
+      m_Value: 1
   m_Rotation:
-    m_Target: {x: 0.032977663, y: -0.03147768, z: 0.0010390958, w: 0.9989609}
+    m_Target: {x: 0, y: 0, z: 0, w: -0.99999994}
     speed: 2
-    m_Value: {x: -0.032977663, y: 0.03147768, z: -0.0010390958, w: -0.9989609}
+    m_Value: {x: 0, y: 0, z: 0, w: -0.99999994}
   m_Size:
-    m_Target: 50.95472
+    m_Target: 64.49967
     speed: 2
-    m_Value: 50.95472
+    m_Value: 64.49967
   m_Ortho:
     m_Target: 1
     speed: 2
     m_Value: 1
-  m_LastSceneViewRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LastSceneViewRotation: {x: 0, y: 0, z: 0, w: -0.99999994}
   m_LastSceneViewOrtho: 1
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
@@ -704,7 +704,7 @@ MonoBehaviour:
     y: 92
     width: 461
     height: 746
-  m_ScrollPosition: {x: 0, y: 244.95508}
+  m_ScrollPosition: {x: 0, y: 0}
   m_InspectorMode: 0
   m_PreviewResizer:
     m_CachedPref: 100
